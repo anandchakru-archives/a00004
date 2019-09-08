@@ -227,11 +227,11 @@ function clickCanvas() {
   document.body.appendChild(canvwrap);
   canvwrap.appendChild(canv);
   ctx = canv.getContext('2d');
-
 } // canvas creation
 
-setTimeout(() => {
-  startOver();
-}, 2000);
-
 window.addEventListener('resize', startOver);
+window.addEventListener('invite-loaded', (event) => {
+  setTimeout(() => {
+    startOver();
+  }, 1000);
+});
