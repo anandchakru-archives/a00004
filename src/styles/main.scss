@@ -10,6 +10,16 @@ img {
   max-width: 100%;
 }
 
+.bg-none {
+  background-color: transparent !important;
+}
+
+.blurr {
+  transition: all 2s linear;
+  background-color: rgba($color: #000000, $alpha: 0.1);
+  @extend .py-3;
+}
+
 @media (max-width: 575.98px) {
 
   //Manage Display Headers for Mobile Devices
